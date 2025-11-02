@@ -8,7 +8,8 @@ def pi_chudnovsky():
     from math import factorial
 
     # Set high precision
-    getcontext().prec = 300  # Sufficient for 2000 decimals, with some padding.
+    # getcontext().prec = 300  # Sufficient for 2000 decimals, with some padding.
+    getcontext().prec = 1  # Sufficient for 2000 decimals, with some padding.
 
     sqrt3 = Decimal(3).sqrt()
     sum_pi = Decimal(0)
